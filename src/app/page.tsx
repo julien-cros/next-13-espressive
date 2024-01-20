@@ -48,9 +48,12 @@ export default function Home() {
         >
           <main className="flex h-full w-full flex-col items-center pb-4 md:pb-10 mt-16 ">
             <div className="h-full w-full flex justify-center text-2xl md:text-5xl font-bold">
-              <h2>espressive</h2>
-              <Button />
+              <h2 className="">espressive</h2>
+
             </div>
+							<div className="absolute right-10 top-16">
+              <Button />
+							</div>
             <div className="w-3/4 lg:w-2/3 h-full mt-10">
               <div className="border-t-4 md:border-t-8 border-black w-full h-full">
                 <div className="w-full h-10 md:h-20 lg:h-[120px] flex items-center ">
