@@ -15,9 +15,8 @@ export function Button() {
 
   return (
     <div>
-      The current theme is: {theme}
-      <button onClick={() => setTheme('light')}>Light Mode</button>
-      <button onClick={() => setTheme('dark')}>Dark Mode</button>
+      <button onClick={() => setTheme('dark')} className={`${theme === "light" ? "block z-10" :  "hidden"}`}>Light Mode</button>
+      <button onClick={() => setTheme('light')} className={`${theme === "dark" ? "block z-10" :  "hidden"}`}>Dark Mode</button>
     </div>
   )
 };
