@@ -7,9 +7,17 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Render from "@/components/Render";
+import {Button} from "@/components/ThemeButton";
+import { ThemeProvider } from "next-themes";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export default function Home() {
- const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [display, setDisplay] = useState(false);
   const [postName, setPostName] = useState("");
 
@@ -17,15 +25,14 @@ export default function Home() {
     const isVisited = window.localStorage.getItem("visited");
 
     if (!isVisited) {
-			setLoading(true);
+      setLoading(true);
       setTimeout(() => {
         window.localStorage.setItem("visited", "true");
-				setLoading(false);
+        setLoading(false);
       }, 5000);
     }
   }, []);
-	
-	
+
   return (
     <div>
       {loading ? (
@@ -42,6 +49,7 @@ export default function Home() {
           <main className="flex h-full w-full flex-col items-center pb-4 md:pb-10 mt-16 ">
             <div className="h-full w-full flex justify-center text-2xl md:text-5xl font-bold">
               <h2>espressive</h2>
+              <Button />
             </div>
             <div className="w-3/4 lg:w-2/3 h-full mt-10">
               <div className="border-t-4 md:border-t-8 border-black w-full h-full">
