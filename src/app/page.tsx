@@ -46,24 +46,27 @@ export default function Home() {
             duration: 0.5,
           }}
         >
-          <main className="flex h-full w-full flex-col items-center pb-4 md:pb-10 mt-16 ">
+          <main className="flex h-full w-full flex-col items-center pb-4 md:pb-10 pt-16 dark:bg-zinc-800 text-black dark:text-zinc-300">
             <div className="h-full w-full flex justify-center text-2xl md:text-5xl font-bold">
-              <h2>espressive</h2>
-              {/* <Button /> */}
+              <h2 className="">espressive</h2>
+
             </div>
+							<div className="absolute md:right-10 md:top-[75px] top-5 right-5">
+              <Button />
+							</div>
             <div className="w-3/4 lg:w-2/3 h-full mt-10">
-              <div className="border-t-4 md:border-t-8 border-black w-full h-full">
+              <div className="border-t-4 md:border-t-8 border-black dark:border-zinc-300 w-full h-full">
                 <div className="w-full h-10 md:h-20 lg:h-[120px] flex items-center ">
                   <p className="text-4xl md:text-7xl lg:text-9xl font-black lg:tracking-[-0.4rem]">
                     The
                   </p>
                 </div>
-                <div className="w-full h-10 md:h-20  lg:h-[120px] border-t-4 md:border-t-8 border-black  flex items-center justify-end">
+                <div className="w-full h-10 md:h-20  lg:h-[120px] border-t-4 md:border-t-8 border-black dark:border-zinc-300  flex items-center justify-end">
                   <p className="text-right text-4xl md:text-7xl lg:text-9xl font-black lg:tracking-[-0.4rem] pr-2">
                     Espresso
                   </p>
                 </div>
-                <div className="w-full h-10 md:h-20 pt-5  lg:h-[120px] flex items-center border-t-4 md:border-t-8 border-black ">
+                <div className="w-full h-10 md:h-20 pt-5  lg:h-[120px] flex items-center border-t-4 md:border-t-8 border-black dark:border-zinc-300 ">
                   <p className="text-4xl md:text-7xl lg:text-9xl font-black lg:tracking-[-0.4rem]">
                     Universe
                   </p>
@@ -85,7 +88,7 @@ export default function Home() {
                           className="pt-4 md:p-10 h-36 overflow-y-hidden"
                         >
                           <div
-                            className="pl-2 md:pl-10 border-t-2 border-black"
+                            className="pl-2 md:pl-10 border-t-2 border-black dark:border-zinc-300"
                             key={p.title}
                           >
                             <div className="grid grid-flow-row-dense grid-cols-3 lg:grid-cols-2">
