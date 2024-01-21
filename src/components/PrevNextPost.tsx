@@ -57,7 +57,7 @@ const PrevNextPost = ({ post }: TitleProps) => {
 							}}
 						>
               <FontAwesomeIcon
-                className="h-3 w-3 md:h-5 md:w-5 ml-5 p-1 justify-center items-center bg-gray-200 bg-opacity-75 rounded-full"
+                className="h-3 w-3 md:h-5 md:w-5 ml-5 p-1 justify-center items-center bg-gray-200 dark:bg-zinc-600 bg-opacity-75 rounded-full"
                 icon={faArrowLeft}
               />
             </motion.div>
@@ -85,7 +85,7 @@ const PrevNextPost = ({ post }: TitleProps) => {
               }}
             >
               <FontAwesomeIcon
-                className="h-3 w-3 md:h-5 md:w-5 mr-5 p-1 justify-end items-center bg-gray-200 bg-opacity-75 rounded-full"
+                className="h-3 w-3 md:h-5 md:w-5 mr-5 p-1 justify-end items-center dark:bg-zinc-600 bg-gray-200 bg-opacity-75 rounded-full"
                 icon={faArrowRight}
               />
             </motion.div>

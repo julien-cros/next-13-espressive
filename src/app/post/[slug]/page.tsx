@@ -58,7 +58,7 @@ export default function PostPage({ params }: PostPageProps) {
   }
 
   return (
-    <div className="w-full h-full flex flex-col bg-slate-100 dark:bg-zinc-800">
+    <div className="w-full h-full flex flex-col  dark:bg-zinc-800">
       <div className="grid grid-cols-3 pt-16 z-10">
         <div className="flex justify-center items-center ">
 				<div className="absolute md:right-10 md:top-[75px] top-5 right-5">
