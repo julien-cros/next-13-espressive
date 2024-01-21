@@ -35,7 +35,7 @@ const Loader = () => {
 				delay: 4,
 			}}
 		>
-      <div className="fixed w-full h-full">
+      <div className="fixed w-full h-full bg-slate-100 dark:bg-zinc-800 text-black dark:text-zinc-300">
         <div className="w-full flex flex-col justify-center items-center mt-24 md:mt-28">
           <div className="w-3/4 lg:w-2/3 h-full mt-10">
             <div className="border-t-4 md:border-t-8  border-opacity-0 border-gray-100 w-full h-full">
@@ -56,9 +56,9 @@ const Loader = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/4 md:w-1/6 h-3 md:h-4 mt-20 justify-center items-center rounded-full border-2 border-black ">
+          <div className="w-1/4 md:w-1/6 h-3 md:h-4 mt-20 justify-center items-center rounded-full border-2 border-black dark:border-slate-100 ">
             <motion.div
-              className="h-[8px] md:h-[12px] bg-black w-1/4 md:w-1/6 rounded-full"
+              className="h-[8px] md:h-[12px] bg-black dark:bg-slate-100 w-1/4 md:w-1/6 rounded-full"
               key="loading"
               initial={{ opacity: 1, width: "0%" }}
               animate={{ opacity: 1, width: "100%" }}
