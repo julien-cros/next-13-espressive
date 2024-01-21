@@ -1,7 +1,7 @@
 "use client";
 
 import {useTheme} from "next-themes";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Switch } from '@headlessui/react'
 
 export function Button() {

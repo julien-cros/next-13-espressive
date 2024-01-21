@@ -7,6 +7,7 @@ import Render from "@/components/Render";
 import notFound from "./not-found";
 import Link from "next/link";
 import React from "react";
+import { Button } from "@/components/ThemeButton";
 
 
 type PostPageProps = {
@@ -57,9 +58,12 @@ export default function PostPage({ params }: PostPageProps) {
   }
 
   return (
-    <div className="w-full h-full flex flex-col">
+    <div className="w-full h-full flex flex-col bg-slate-100 dark:bg-zinc-800">
       <div className="grid grid-cols-3 pt-16 z-10">
         <div className="flex justify-center items-center ">
+				<div className="absolute right-10 top-16">
+              <Button />
+							</div>
           <Link href={'/'}
             className="h-3 w-3 md:h-5 md:w-5 cursor-pointer hover:scale-105 active:scale-95 transition duration-75 ease-out font-semibold text-base lg:text-lg flex flex-row items-center"
           >
