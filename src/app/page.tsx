@@ -46,12 +46,12 @@ export default function Home() {
             duration: 0.5,
           }}
         >
-          <main className="flex h-full w-full flex-col items-center pb-4 md:pb-10 pt-16 bg-slate-100 dark:bg-zinc-800 text-black dark:text-zinc-300">
+          <main className="flex h-full w-full flex-col items-center pb-4 md:pb-10 pt-16 dark:bg-zinc-800 text-black dark:text-zinc-300">
             <div className="h-full w-full flex justify-center text-2xl md:text-5xl font-bold">
               <h2 className="">espressive</h2>
 
             </div>
-							<div className="absolute right-10 top-16">
+							<div className="absolute md:right-10 md:top-[75px] top-5 right-5">
               <Button />
 							</div>
             <div className="w-3/4 lg:w-2/3 h-full mt-10">
