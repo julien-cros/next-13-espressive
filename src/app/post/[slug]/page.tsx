@@ -83,7 +83,7 @@ export default function PostPage({ params }: PostPageProps) {
         <Render code={post?.body.code} />
       </div>
       <div className="w-full h-full flex justify-center items-center">
-        <h4 className="py-10 pl-72 md:pl-96">{post?.updatedAt}</h4>
+        <h4 className="py-10 pl-48 md:pl-96">{post?.updatedAt}</h4>
       </div>
       <PrevNextPost post={post.title} />
     </div>
