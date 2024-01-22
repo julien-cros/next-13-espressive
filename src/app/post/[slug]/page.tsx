@@ -77,7 +77,7 @@ export default function PostPage({ params }: PostPageProps) {
         </div>
       </div>
       <div className="h-full w-full pt-16 flex justify-center text-3xl md:text-5xl font-bold">
-        <h3 className="pl-10 md:pl-0 z-40">{post?.title}</h3>
+        <h3 className=" flex text-center">{post?.title}</h3>
       </div>
       <div className="pt-10 md:pt-20">
         <Render code={post?.body.code} />
