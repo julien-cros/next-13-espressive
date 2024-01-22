@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 		url: "https://espressive.fr",
 		images: [
 			{
-				url: "https://espressive.fr/images/coffee.jpg",
+				url: "https://espressive.fr/opengraph-image.png",
 				width: 980,
 				height: 980,
 				alt: "Espressive",

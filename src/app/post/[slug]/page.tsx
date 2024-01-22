@@ -6,7 +6,7 @@ import { allPosts } from "contentlayer/generated";
 import Render from "@/components/Render";
 import notFound from "./not-found";
 import Link from "next/link";
-import React from "react";
+import React, { use } from "react";
 import { Button } from "@/components/ThemeButton";
 
 
