@@ -33,6 +33,7 @@ export async function generateMetadata({
 	return {
 		metadataBase: new URL("https://espressive.fr"),
 		title: post.title,
+		...({ keywords: post.tags.join(", ")}),
 		description: post.description,
 		openGraph: {
 			title: post.title,
