@@ -31,7 +31,7 @@ const Loader = () => {
           delay: 4,
         }}
       >
-        <div className="fixed w-full h-full bg-slate-100 dark:bg-zinc-800 text-black dark:text-zinc-300">
+        <div className="fixed w-full h-full dark:bg-zinc-800 text-black dark:text-zinc-300">
           <div className="w-full flex flex-col justify-center items-center mt-64">
             <p className=" text-4xl md:text-7xl lg:text-9xl font-black lg:tracking-[-0.4rem] text-center">
               The Espresso<br/> Universe
