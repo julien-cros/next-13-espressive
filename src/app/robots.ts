@@ -5,9 +5,9 @@ export default function robots(): MetadataRoute.Robots {
 		rules: [
 			{
 				userAgent: "*",
-				allow: "/",
 			}
 		],
+		
 		sitemap: "https://espressive.fr/sitemap.xml",
 	}
 }

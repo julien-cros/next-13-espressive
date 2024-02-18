@@ -27,6 +27,14 @@ export const metadata: Metadata = {
 			},
 		],
 	},
+	robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+	},
 	twitter: {
 		title: "Espressive",
 		site: "@espressive",
