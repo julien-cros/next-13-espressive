@@ -12,9 +12,14 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://espressive.fr"),
-  title: "Espressive",
+  title: {
+		default: "Espressive",
+		template: "Espressive: %s",
+	},
   description: "A blog about the world of espresso",
 	openGraph: {
+		title: "Espressive",
+		description: "A blog about the world of espresso",
 		type: "website",
 		locale: "en_US",
 		url: "https://espressive.fr",
