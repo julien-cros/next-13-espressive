@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Providers } from "./providers";
 import { Analytics } from '@vercel/analytics/react';
+import { PenkleAnalytics } from "@/components/PenkleAnalytics";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -57,6 +58,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <Providers>{children}
 					<Analytics/>
+					<PenkleAnalytics domain="espressive.fr"/>
 				</Providers>
       </body>
     </html>
